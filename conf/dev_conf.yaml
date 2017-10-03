@@ -1,0 +1,71 @@
+%YAML 1.2
+---
+db:
+    omim: "OMIM"
+    hpo: "HPO"
+    hpo_gene: "HPO_GENE"
+    hugo: "HUGO"
+    user: "ontology"
+    password: "annotate"
+    host: "hpcdb.research.partners.org"
+url:
+    omim: "http://omim.org/"
+    hgnc: "http://www.genenames.org/data/hgnc_data.php?hgnc_id="
+    entrez: "http://www.ncbi.nlm.nih.gov/gene/"
+keyword:
+    phenotype_series: "(PS)"
+    disease: "disease"
+    phenotype: "phenotype"
+    gene: "gene"
+    gene_disease: "omim"
+    gene_phenotype: "hpo"
+variable:
+        make_link: True
+files:
+    search:
+        template: "/PHShome/jje16/svn/ngs/ontology_dev/branch/template/search_plate_v1.0.mako"
+        css: "../../css/search_v1.css"
+    main:
+        template: "/PHShome/jje16/svn/ngs/ontology_dev/branch/template/ontol_plate_v2.4.mako"
+        css: "../../css/ontol_v2.css"
+    csweb:
+        template: "/PHShome/jje16/svn/ngs/ontology_dev/branch/template/csweb_plate_v2.mako"
+        js:
+            - "../../js/cytoscapeweb.min.js"
+            - "../../js/AC_OETags.min.js"
+            - "../../js/json2.min.js"
+        swf: "../../js/CytoscapeWeb"
+executable:
+    search: "search"
+    main: "mainpage"
+image:
+    directory: "../../img"
+    disease: "blue_bg.png"
+    phenotype: "green_bg.png"
+    gene: "drkbl_bg.png"
+    banner:
+        pcpgm: "pcpgm_banner.png"
+        tool: "tool_banner3.png"
+    separator: "separator_0.png"
+    pane:
+        summary: "pane_sum_0.png"
+        primary: "pane_0.png"
+        network: "tt_lshape.png"
+        csweb: "csweb_bg.png" 
+csweb:
+    style:
+        global:
+            backgroundColor: "#FFFFFF"
+            tooltipDelay: 10
+        nodes:
+            label: { passthroughMapper: { attrName: "name" }}
+            borderWidth: 0.25
+            borderColor: "#7D52FF"
+        edges:
+            color: "#999999"
+            width: 2
+            mergeWidth: 2
+            opacity: 1
+            label: { passthroughMapper: { attrName: "id" }}
+            labelFontSize: 10
+            labelFontWeight: bold

@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^das$ mod_scripts/ontol_modpy_v2.1.py/mainpage [L]

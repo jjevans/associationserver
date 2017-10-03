@@ -1,0 +1,38 @@
+/* search forms */
+#formdiv{
+	position: absolute;
+	left: 250px;
+	top: 500px;
+	height: 300px;
+	width: 300px;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 15px;
+	background-color: black;	
+}
+#autocomplete_title{
+	text-align:center;
+	font-weight: bold;
+	text-decoration:underline;
+}
+.form_title{
+	color: #76EFC5;
+	font-size: 24px;
+	font-family: Georgia;
+	font-style: italic;
+	padding-left: 5px;
+}
+#formdiv0,#formdiv1,#formdiv2{
+	border: 2px solid #76EFC5;
+	margin: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ui-autocomplete {
+	height: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 10pt;
+}
+*/

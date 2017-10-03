@@ -1,0 +1,7 @@
+
+for installing mod_python (v3.5), need to change version.sh file.
+
+comment out: GIT=`git describe --always`
+
+and replace: echo $MAJ.$MIN.$PCH-$GIT
+with: echo $MAJ.$MIN.$PCH
